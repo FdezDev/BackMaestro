@@ -21,7 +21,7 @@ const user_create = async (req, res) => {
     const direccion = req.body.direccion;
     const edificio = req.body.edificio;
     const ciudad = req.body.ciudad;
-    const pais = req.body.pais;
+    const estado = req.body.estado;
     const cp = req.body.cp;
     const colonia = req.body.colonia;
 
@@ -31,14 +31,14 @@ const user_create = async (req, res) => {
         cel,
         password,
         cp,
-        pais,
+        estado,
         ciudad,
         colonia,
         edificio,
         direccion,
 
     },
-        { fields: ['name', 'email', 'cel', 'password' ,'cp','pais','ciudad','colonia','edificio','direccion'] })
+        { fields: ['name', 'email', 'cel', 'password' ,'cp','estado','ciudad','colonia','edificio','direccion'] })
         .then(users => {
             res.send(users)
 

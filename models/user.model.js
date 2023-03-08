@@ -57,12 +57,12 @@ const User = getData.sequelizeClient.define('cat_users', {
             }
         }
     },
-    pais: {
+    estado: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
             notNull: {
-                msg: 'Ingrese un pais'
+                msg: 'Ingrese un estado'
             }
         }
     },

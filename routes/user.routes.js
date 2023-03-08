@@ -26,7 +26,7 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false })
  *              - email
  *              - password
  *              - cel
- *              - pais
+ *              - estado
  *              - ciudad
  *              - colonia
  *              - edificio
@@ -47,9 +47,9 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false })
  *              cp:
  *                type: string
  *                default: 29150
- *              pais:
+ *              estado:
  *                type: string
- *                default: mexico
+ *                default: chiapas
  *              ciudad:
  *                type: string
  *                default: suchiapa
