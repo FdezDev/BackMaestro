@@ -30,12 +30,75 @@ const User = getData.sequelizeClient.define('cat_users', {
             msg: ''
         },
     },
+    cel: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            notNull: {
+                msg: 'Ingrese un nombre'
+            }
+        }
+    },
     password: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
             notNull: {
                 msg: 'Ingrese una contraseña'
+            }
+        }
+    },
+    cp: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            notNull: {
+                msg: 'Ingrese codigo postal'
+            }
+        }
+    },
+    pais: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            notNull: {
+                msg: 'Ingrese un pais'
+            }
+        }
+    },
+    ciudad: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            notNull: {
+                msg: 'Ingrese su ciudad'
+            }
+        }
+    },
+    colonia: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            notNull: {
+                msg: 'Ingrese nombre colonia'
+            }
+        }
+    },
+    edificio: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            notNull: {
+                msg: 'Ingrese detalles del edificio'
+            }
+        }
+    },
+    direccion: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            notNull: {
+                msg: 'Ingrese una direccion'
             }
         }
     },

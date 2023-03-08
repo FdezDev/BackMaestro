@@ -25,6 +25,12 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false })
  *              - name
  *              - email
  *              - password
+ *              - cel
+ *              - pais
+ *              - ciudad
+ *              - colonia
+ *              - edificio
+ *              - direccion
  *            properties:
  *              name:
  *                type: string
@@ -32,9 +38,30 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false })
  *              email:
  *                type: string
  *                default: prueba@gmail.com
+ *              cel:
+ *                type: string
+ *                default: 9925543456
  *              password:
  *                type: string
  *                default: prueba141189@
+ *              cp:
+ *                type: string
+ *                default: 29150
+ *              pais:
+ *                type: string
+ *                default: mexico
+ *              ciudad:
+ *                type: string
+ *                default: suchiapa
+ *              colonia:
+ *                type: string
+ *                default: la mision
+ *              edificio:
+ *                type: string
+ *                default: color negro dos platas
+ *              direccion:
+ *                type: string
+ *                default: frente la clinica
  *     responses:
  *      200:
  *        description: Create
